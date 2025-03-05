@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sports
+  webflux:
+    base-path: /api
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/sport-events
+    username: admin
+    password: events
+  jackson:
+    time-zone: America/Bogota
+server:
+  port: 8085

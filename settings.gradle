@@ -1,0 +1,14 @@
+rootProject.name = 'sports'
+
+
+
+
+include ':domain-usecase'
+include ':reactive-web'
+
+include ':domain-model'
+project(':domain-model').name = rootDir.parentFile.parentFile.name + 'model'
+//project(':domain-model').projectDir = rootDir.parentFile
+//project(':domain-model').buildFileName = rootDir.name
+
+project(':domain-usecase').projectDir = file('/domain/usecase')

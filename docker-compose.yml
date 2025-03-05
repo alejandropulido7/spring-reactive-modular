@@ -1,0 +1,24 @@
+services:
+#  server:
+#    build:
+#      context: .
+#    ports:
+#      - 8080:8080
+#    depends_on:
+#      db:
+#        condition: service_healthy
+#    environment:
+#      - POSTGRES_URL=jdbc:postgresql://db:5432/petclinic
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=sport-events
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=events
+    ports:
+      - 5432:5432
+volumes:
+  db-data:
