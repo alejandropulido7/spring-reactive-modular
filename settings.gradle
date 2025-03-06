@@ -1,14 +1,10 @@
 rootProject.name = 'sports'
+include 'domain:model'
+findProject(':domain:model')?.name = 'model'
+include 'domain:usecase'
+findProject(':domain:usecase')?.name = 'usecase'
+include 'infraestructure:r2dbc-repository'
+findProject(':infraestructure:r2dbc-repository')?.name = 'r2dbc-repository'
+include 'infraestructure:entry-point'
+findProject(':infraestructure:entry-point')?.name = 'entry-point'
 
-
-
-
-include ':domain-usecase'
-include ':reactive-web'
-
-include ':domain-model'
-project(':domain-model').name = rootDir.parentFile.parentFile.name + 'model'
-//project(':domain-model').projectDir = rootDir.parentFile
-//project(':domain-model').buildFileName = rootDir.name
-
-project(':domain-usecase').projectDir = file('/domain/usecase')
