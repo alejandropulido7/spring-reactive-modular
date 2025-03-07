@@ -1,4 +1,4 @@
-package com.events.sports;
+package com.events;
 
 import io.r2dbc.spi.ConnectionFactory;
 import org.springframework.boot.SpringApplication;

@@ -7,4 +7,5 @@ include 'infraestructure:r2dbc-repository'
 findProject(':infraestructure:r2dbc-repository')?.name = 'r2dbc-repository'
 include 'infraestructure:entry-point'
 findProject(':infraestructure:entry-point')?.name = 'entry-point'
+include 'application'
 

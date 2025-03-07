@@ -2,7 +2,6 @@ package com.events.event;
 
 import com.events.team.TeamDTO;
 import lombok.Data;
-import org.springframework.data.relational.core.mapping.Column;
 
 import java.time.LocalDateTime;
 import java.util.List;

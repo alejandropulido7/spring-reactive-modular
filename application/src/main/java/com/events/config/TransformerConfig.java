@@ -1,7 +1,7 @@
-package com.events.sports.config;
+package com.events.config;
 
-import com.events.sports.infraestructure.repository.event.EventEntityTransformer;
-import com.events.sports.infraestructure.repository.event.enroll_team.EnrollTeamEventTransformer;
+import com.events.event.EventEntityTransformer;
+import com.events.event.enroll_team.EnrollTeamEventTransformer;
 import org.mapstruct.factory.Mappers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
